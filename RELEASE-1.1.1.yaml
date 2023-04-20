@@ -1,0 +1,19 @@
+version: 1.1.1
+services:
+  service01:
+    version: 1.1.1-20210124174347
+    commit: 520380191ece586839bceb7ed14fcc470738f982
+  service02:
+    version: 1.1.1-20210124145512
+    commit: c7c32b628ef437ccbf55c1b998328eb6cd2f3010
+dependencies:
+  redis:
+    version: 2:2.8.4-2
+  consul:
+    version: 0.7.5
+  vault:
+    version: 0.7.0
+artifactSources:
+  dockerRegistry: registry.cn-beijing.aliyuncs.com
+  imageProject: mservices
+  gitPrefix: https://github.com/spinnaker
